@@ -34,8 +34,9 @@ export class SubmitFeedbackUseCase {
         body: [`
             <div style="color: grey"`,`
             <p> teste: ${type} </p>`,`
-            <p> comment: ${comment} </p>`,`
-            </div>
+            <p> comment: ${comment} </p>`,
+            screenshot ? `<img src="${screenshot}" />`:``,
+            `</div>
         `].join('\n')
         })
         
