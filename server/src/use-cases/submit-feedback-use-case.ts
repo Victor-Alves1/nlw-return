@@ -33,7 +33,7 @@ export class SubmitFeedbackUseCase {
         subject: 'Novo feedback',  
         body: [`
             <div style="color: grey"`,`
-            <p> teste: ${type} </p>`,`
+            <p> Type: ${type} </p>`,`
             <p> comment: ${comment} </p>`,
             screenshot ? `<img src="${screenshot}" />`:``,
             `</div>
